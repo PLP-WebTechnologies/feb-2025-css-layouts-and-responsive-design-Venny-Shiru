@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Palletes & Canvas Art Studio</title>
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">Palletes & Canvas</div>
+            <button class="mobile-menu-btn">☰</button>
+            <nav>
+                <ul id="main-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Express Your Creativity</h1>
+            <p>A contemporary art studio offering classes, gallery space, and a supportive community for artists of all skill levels.</p>
+            <a href="#features" class="btn">Explore Our Classes</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-img">
+                        <img src="https://images.pexels.com/photos/3778139/pexels-photo-3778139.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Live Figure Drawing" height="100%" width="100%">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Figure Drawings</h3>
+                        <p>Develop your observational skills with our weekly figure drawing sessions featuring live models and expert guidance..</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-img">
+                        <img src="https://images.pexels.com/photos/1045299/pexels-photo-1045299.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Oil Painting" height="100%" width="100%">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Oil Paintings</h3>
+                        <p>Learn the basics of oil painting, from color mixing to composition. This 6-week course covers materials, techniques, and creative approaches.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-img">
+                        <img src="https://images.pexels.com/photos/31848846/pexels-photo-31848846/free-photo-of-potter-shaping-clay-on-wheel-in-artisan-workshop.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Ceramic Art" height="100%" width="100%">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Ceramics</h3>
+                        <p>Get your hands dirty with clay! Learn hand-building techniques and try wheel throwing in this comprehensive introduction to ceramics.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <div class="about-flex">
+                <div class="about-img">
+                    <img src="https://images.pexels.com/photos/102127/pexels-photo-102127.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Palletes & Canvas" height="100%" width="100%">
+                </div>
+                <div class="about-content">
+                    <h2>Our Story</h2>
+                    <p>Palette & Canvas was founded in 2018 by award-winning artist Elena Rodriguez, who envisioned a collaborative space where artists could work, learn, and exhibit together.</p>
+                    <p>What began as a small workshop space has grown into a thriving community art center, with over 500 members ranging from beginners to professional artists.</p>
+                    <p>Our mission is to make art accessible to everyone by providing affordable studio access, quality instruction, and exhibition opportunities in a supportive environment.</p>
+                    <p>We believe that artistic expression enriches lives and strengthens communities, and we're dedicated to fostering creativity in people of all ages and backgrounds.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" class="form-control" required></textarea>
+                </div>
+                <button type="submit" class="form-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Palletes & Canvas</h3>
+                    <p>A community art studio dedicated to fostering creativity and artistic growth in a supportive environment.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>Email: hello@palleteandcanvas.com</li>
+                        <li>Phone: (+254) 722-770319</li>
+                        <li>Address: 123 Tom Mboya Street</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Palletes & Canvas Art Studio. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu Toggle -->
+    <script>
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.getElementById('main-menu').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
